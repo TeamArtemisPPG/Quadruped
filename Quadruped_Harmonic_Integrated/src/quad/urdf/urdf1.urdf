@@ -1,0 +1,843 @@
+<!-- <?xml version='1.0'?>
+<robot name="urdf">
+    <link name="body-v1">
+        <inertial>
+            <origin xyz="0.0 0.05999999999999999 0.0" rpy="0.0 0.0 0.0" />
+            <mass value="2.543399999999999" />
+            <inertia ixx="0.040768874999999999" iyy="0.020079229499999999" izz="0.020212757999999999" ixy="0.0" iyz="0.0" ixz="0.0" />
+        </inertial>
+        <visual name="body-v1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/body-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="body-v1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/body-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg11">
+        <inertial>
+            <origin xyz="-0.02499999999240086 -0.004640688291708117 -0.05000000000000014" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="0.000324966535109647" iyy="0.0003989895652956434" izz="7.965403510965777e-05" ixy="3.170207152347615e-16" iyz="-5.421010862427522e-20" ixz="4.336808689942018e-19" />
+        </inertial>
+        <visual name="leg11_visual">
+            <origin xyz="-0.1249999999999994 -0.009999999999999983 1.1013412404281553e-15" rpy="-1.387778780781069e-17 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg11_collision">
+            <origin xyz="-0.1249999999999994 -0.009999999999999983 1.1013412404281553e-15" rpy="-1.387778780781069e-17 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg21">
+        <inertial>
+            <origin xyz="0.024999999992400834 -0.00464068829170813 -0.04999999999999986" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="0.0003249665351096418" iyy="0.00039898956529565554" izz="7.965403510966883e-05" ixy="-3.213575239247035e-16" iyz="0.0" ixz="3.2526065174565133e-19" />
+        </inertial>
+        <visual name="leg21_visual">
+            <origin xyz="0.12499999999999921 -0.01 -0.10000000000000112" rpy="-1.3877787807794285e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg21_collision">
+            <origin xyz="0.12499999999999921 -0.01 -0.10000000000000112" rpy="-1.3877787807794285e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg31">
+        <inertial>
+            <origin xyz="0.024999999992400913 -0.0046406882917081485 0.05000000000000016" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="0.000324966535109647" iyy="0.00039898956529564817" izz="7.965403510966449e-05" ixy="-3.1821333762449555e-16" iyz="0.0" ixz="7.589415207398531e-19" />
+        </inertial>
+        <visual name="leg31_visual">
+            <origin xyz="0.12499999999999933 -0.01 -1.0658141036401502e-15" rpy="-1.387778780781906e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg31_collision">
+            <origin xyz="0.12499999999999933 -0.01 -1.0658141036401502e-15" rpy="-1.387778780781906e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg41">
+        <inertial>
+            <origin xyz="-0.024999999992400816 -0.004640688291708104 0.04999999999999982" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="0.0003249665351096457" iyy="0.0003989895652956191" izz="7.96540351096723e-05" ixy="3.1569256757346675e-16" iyz="-2.303929616531697e-18" ixz="3.903127820947816e-18" />
+        </inertial>
+        <visual name="leg41_visual">
+            <origin xyz="-0.12499999999999904 -0.00999999999999992 0.10000000000000095" rpy="-3.5038433297811654e-30 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg41_collision">
+            <origin xyz="-0.12499999999999904 -0.00999999999999992 0.10000000000000095" rpy="-3.5038433297811654e-30 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg22">
+        <inertial>
+            <origin xyz="-0.05233087928939563 0.0004962225604029058 -0.005000000000000218" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096018707550839e-05" iyy="0.0002624503579390742" izz="0.0003184556930067566" ixy="1.910782554029322e-06" iyz="-1.566672139241554e-17" ixz="-7.589415207398531e-18" />
+        </inertial>
+        <visual name="leg22_visual">
+            <origin xyz="0.08462211501686964 -0.0682099120374541 -0.010000000000000227" rpy="-1.5707963267948988 -3.935269254659455e-16 -0.6981317007977291" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg22.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg22_collision">
+            <origin xyz="0.08462211501686964 -0.0682099120374541 -0.010000000000000227" rpy="-1.5707963267948988 -3.935269254659455e-16 -0.6981317007977291" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg22.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg42">
+        <inertial>
+            <origin xyz="-0.05233087928939586 0.0004962225604026926 0.004999999999999893" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096018707549408e-05" iyy="0.0002624503579390699" izz="0.0003184556930065979" ixy="1.910782554013425e-06" iyz="1.7618285302889447e-17" ixz="4.7704895589362195e-18" />
+        </inertial>
+        <visual name="leg42_visual">
+            <origin xyz="0.08462211501687016 -0.06820991203745458 -2.3092638912203257e-16" rpy="-1.570796326794895 1.4736367939808667e-15 -0.6981317007977279" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg42.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg42_collision">
+            <origin xyz="0.08462211501687016 -0.06820991203745458 -2.3092638912203257e-16" rpy="-1.570796326794895 1.4736367939808667e-15 -0.6981317007977279" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg42.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg32">
+        <inertial>
+            <origin xyz="-0.052330879289395435 0.0004962225604027992 -0.005000000000000047" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096018707547283e-05" iyy="0.00026245035793910393" izz="0.0003184556930066829" ixy="1.910782553999398e-06" iyz="-1.089623183347932e-17" ixz="-8.944667923005412e-19" />
+        </inertial>
+        <visual name="leg32_visual">
+            <origin xyz="0.08462211501687009 -0.06820991203745454 -0.009999999999999919" rpy="-1.5707963267948983 -1.1119661350741087e-15 -0.6981317007977297" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg32.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg32_collision">
+            <origin xyz="0.08462211501687009 -0.06820991203745454 -0.009999999999999919" rpy="-1.5707963267948983 -1.1119661350741087e-15 -0.6981317007977297" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg32.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg12">
+        <inertial>
+            <origin xyz="-0.05233087928939573 0.0004962225604029413 0.004999999999999912" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096018707546632e-05" iyy="0.0002624503579391306" izz="0.000318455693006669" ixy="1.9107825539986393e-06" iyz="-1.3552527156068805e-18" ixz="1.5612511283791264e-17" />
+        </inertial>
+        <visual name="leg12_visual">
+            <origin xyz="0.08462211501686985 -0.06820991203745486 2.6645352591003756e-16" rpy="-1.570796326794895 -1.8888163384851923e-15 -0.6981317007977323" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg12.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg12_collision">
+            <origin xyz="0.08462211501686985 -0.06820991203745486 2.6645352591003756e-16" rpy="-1.570796326794895 -1.8888163384851923e-15 -0.6981317007977323" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg12.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg23">
+        <inertial>
+            <origin xyz="0.06750000159796224 -0.005000000000000154 4.752922819761807e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.991711651509931e-05" iyy="0.0006277719884739755" izz="0.0005545956109067928" ixy="6.535625089563117e-18" iyz="2.7105054312137608e-17" ixz="6.765421556309548e-17" />
+        </inertial>
+        <visual name="leg23_visual">
+            <origin xyz="0.2000000015979664 2.1094237467877976e-16 0.0500000047529247" rpy="3.1415926535897927 1.570796326794892 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg23.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg23_collision">
+            <origin xyz="0.2000000015979664 2.1094237467877976e-16 0.0500000047529247" rpy="3.1415926535897927 1.570796326794892 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg23.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg43">
+        <inertial>
+            <origin xyz="0.06750000159796035 0.004999999999999805 4.752922280193417e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.991711651509411e-05" iyy="0.0006277719884737879" izz="0.0005545956109071293" ixy="6.101944220568905e-18" iyz="-2.6237692574149207e-17" ixz="3.523657060577888e-18" />
+        </inertial>
+        <visual name="leg43_visual">
+            <origin xyz="0.2000000015979605 0.00999999999999961 0.05000000475292211" rpy="-3.141592653589793 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg43.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg43_collision">
+            <origin xyz="0.2000000015979605 0.00999999999999961 0.05000000475292211" rpy="-3.141592653589793 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg43.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg13">
+        <inertial>
+            <origin xyz="0.06750000159796014 0.005000000000000107 4.752921853867775e-09" rpy="0.0 -5.198782929104088e-62 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.991711651507069e-05" iyy="0.0006277719884738185" izz="0.0005545956109072429" ixy="1.9081958235744878e-17" iyz="2.710505431213762e-19" ixz="1.089623183347932e-17" />
+        </inertial>
+        <visual name="leg13_visual">
+            <origin xyz="0.2000000015979601 0.010000000000000533 0.05000000475292228" rpy="3.1415926535897896 1.5707963267948952 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg13.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg13_collision">
+            <origin xyz="0.2000000015979601 0.010000000000000533 0.05000000475292228" rpy="3.1415926535897896 1.5707963267948952 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg13.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg33">
+        <inertial>
+            <origin xyz="0.06750000159796174 -0.005000000000001035 4.7529239921573205e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.991711651493018e-05" iyy="0.0006277719884734759" izz="0.0005545956109067423" ixy="-1.1257503384978625e-16" iyz="-2.5587171270657905e-17" ixz="3.148523108897905e-16" />
+        </inertial>
+        <visual name="leg33_visual">
+            <origin xyz="0.200000001597964 -2.968736367847669e-15 0.050000004752928436" rpy="-3.14159265358978 1.5707963267948928 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg33.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg33_collision">
+            <origin xyz="0.200000001597964 -2.968736367847669e-15 0.050000004752928436" rpy="-3.14159265358978 1.5707963267948928 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg33.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <!-- <link name="world"/>
+
+    <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="body-v1"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    </joint> -->
+    <joint name="CCUP1" type="continuous">
+        <origin xyz="-0.15 0.0 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg11" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="CCUP4" type="continuous">
+        <origin xyz="0.15 0.0 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg41" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="CCUP3" type="continuous">
+        <origin xyz="0.15 0.12 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg31" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="CCUP2" type="continuous">
+        <origin xyz="-0.15 0.12 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg21" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="FOOT4" type="continuous">
+        <origin xyz="-0.10466176 0.0009924500000000002 0.01" rpy="1.5707963267948966 -5.5511151231256687e-17 -9.177442125468086e-47" />
+        <parent link="leg42" />
+        <child link="leg43" />
+        <axis xyz="-5.5511151231256687e-17 -1.0 -9.860761315262648e-32" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="FOOT1" type="continuous">
+        <origin xyz="-0.10466176 0.0009924500000000002 0.01" rpy="1.5707963267948966 2.6360961202140277e-31 -4.0053834567517915e-31" />
+        <parent link="leg12" />
+        <child link="leg13" />
+        <axis xyz="2.6360961202140277e-31 -1.0 -2.465190328815662e-32" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="FOOT2" type="continuous">
+        <origin xyz="-0.10466176 0.000992449999999998 -0.01" rpy="1.5707963267948966 -5.551115123125775e-17 6.1083315263577644e-33" />
+        <parent link="leg22" />
+        <child link="leg23" />
+        <axis xyz="-5.551115123125775e-17 -1.0 0.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="FOOT3" type="continuous">
+        <origin xyz="-0.10466176 0.000992449999999998 -0.01" rpy="1.5707963267948966 5.551115123125741e-17 6.099877534946196e-33" />
+        <parent link="leg32" />
+        <child link="leg33" />
+        <axis xyz="5.551115123125741e-17 -1.0 4.930380657631324e-32" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="THIGH1" type="continuous">
+        <origin xyz="-0.05 -0.005 -0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg11" />
+        <child link="leg12" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="THIGH4" type="continuous">
+        <origin xyz="-0.05 -0.005 0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg41" />
+        <child link="leg42" />
+        <axis xyz="0.0 -1.232595164407831e-32 1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="THIGH2" type="continuous">
+        <origin xyz="0.05 -0.005 -0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg21" />
+        <child link="leg22" />
+        <axis xyz="0.0 0.0 -1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+    <joint name="THIGH3" type="continuous">
+        <origin xyz="0.05 -0.005 0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg31" />
+        <child link="leg32" />
+        <axis xyz="0.0 0.0 -1.0" />
+    <dynamics damping="0.5" friction="0.5"/>
+              <limit lower="-3.14" upper="3.14" effort="5.0" velocity="1"/>
+    </joint>
+
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <!-- Leg 1 -->
+  <joint name="CCUP1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 2 -->
+  <joint name="CCUP2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 3 -->
+  <joint name="CCUP3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 4 -->
+  <joint name="CCUP4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+</ros2_control>
+<gazebo>
+  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+   <parameters>/home/aanimesh/Quadruped/install/quad/share/quad/config/controllers.yaml</parameters>
+   </plugin>
+</gazebo>
+</robot> -->
+
+<?xml version='1.0'?>
+<robot name="urdf">
+    <link name="body-v1">
+        <inertial>
+            <origin xyz="0.0 0.05999999999999999 0.0" rpy="0.0 0.0 0.0" />
+            <mass value="250.43399999999999" />
+            <inertia ixx="4.769e-2" iyy="2.079e-1" izz="2.213e-1" ixy="0.0" iyz="0.0" ixz="-4.569e-17" />
+        </inertial>
+        <visual name="body-v1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/body-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="body-v1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/body-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg11">
+        <inertial>
+            <origin xyz="-0.02499999999240086 -0.004640688291708117 -0.05000000000000014" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="7.965e-5" iyy="3.990e-4" izz="3.25e-4" ixy="0.0" iyz="3.17e-16" ixz="-7.105e-19" />
+        </inertial>
+        <visual name="leg11_visual">
+            <origin xyz="-0.1249999999999994 -0.009999999999999983 1.1013412404281553e-15" rpy="-1.387778780781069e-17 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg11_collision">
+            <origin xyz="-0.1249999999999994 -0.009999999999999983 1.1013412404281553e-15" rpy="-1.387778780781069e-17 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg11.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg21">
+        <inertial>
+            <origin xyz="0.024999999992400834 -0.00464068829170813 -0.04999999999999986" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="7.965e-5" iyy="3.99e-4" izz="3.25e-4" ixy="0.0" iyz="-3.214e-16" ixz="-2.665e-19" />
+        </inertial>
+        <visual name="leg21_visual">
+            <origin xyz="0.12499999999999921 -0.01 -0.10000000000000112" rpy="-1.3877787807794285e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg21_collision">
+            <origin xyz="0.12499999999999921 -0.01 -0.10000000000000112" rpy="-1.3877787807794285e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg21.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg31">
+        <inertial>
+            <origin xyz="0.024999999992400913 -0.0046406882917081485 0.05000000000000016" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="7.965e-5" iyy="3.99e-4" izz="3.25e-4" ixy="0.0" iyz="-3.183e-16" ixz="-8.882e-19" />
+        </inertial>
+        <visual name="leg31_visual">
+            <origin xyz="0.12499999999999933 -0.01 -1.0658141036401502e-15" rpy="-1.387778780781906e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg31_collision">
+            <origin xyz="0.12499999999999933 -0.01 -1.0658141036401502e-15" rpy="-1.387778780781906e-17 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg31.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg41">
+        <inertial>
+            <origin xyz="-0.024999999992400816 -0.004640688291708104 0.04999999999999982" rpy="0.0 -0.0 0.0" />
+            <mass value="0.3431769931450156" />
+            <inertia ixx="7.965e-5" iyy="3.99e-4" izz="3.25e-4" ixy="2.331e-18" iyz="3.157e-16" ixz="-3.908e-18" />
+        </inertial>
+        <visual name="leg41_visual">
+            <origin xyz="-0.12499999999999904 -0.00999999999999992 0.10000000000000095" rpy="-3.5038433297811654e-30 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg41_collision">
+            <origin xyz="-0.12499999999999904 -0.00999999999999992 0.10000000000000095" rpy="-3.5038433297811654e-30 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg41.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg22">
+        <inertial>
+            <origin xyz="-0.05233087928939563 0.0004962225604029058 -0.005000000000000218" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096e-5" iyy="2.625e-4" izz="3.185e-4" ixy="-1.911e-6" iyz="-1.568e-17" ixz="7.461e-18" />
+        </inertial>
+        <visual name="leg22_visual">
+            <origin xyz="0.08462211501686964 -0.0682099120374541 -0.010000000000000227" rpy="-1.5707963267948988 -3.935269254659455e-16 -0.6981317007977291" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg22.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg22_collision">
+            <origin xyz="0.08462211501686964 -0.0682099120374541 -0.010000000000000227" rpy="-1.5707963267948988 -3.935269254659455e-16 -0.6981317007977291" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg22.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg42">
+        <inertial>
+            <origin xyz="-0.05233087928939586 0.0004962225604026926 0.004999999999999893" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096e-5" iyy="2.625e-4" izz="3.185e-4" ixy="-1.911e-6" iyz="1.761e-17" ixz="-4.796e-18" />
+        </inertial>
+        <visual name="leg42_visual">
+            <origin xyz="0.08462211501687016 -0.06820991203745458 -2.3092638912203257e-16" rpy="-1.570796326794895 1.4736367939808667e-15 -0.6981317007977279" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg42.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg42_collision">
+            <origin xyz="0.08462211501687016 -0.06820991203745458 -2.3092638912203257e-16" rpy="-1.570796326794895 1.4736367939808667e-15 -0.6981317007977279" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg42.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg32">
+        <inertial>
+            <origin xyz="-0.052330879289395435 0.0004962225604027992 -0.005000000000000047" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096e-5" iyy="2.625e-4" izz="3.185e-4" ixy="-1.911e-6" iyz="-1.092e-17" ixz="8.882e-19" />
+        </inertial>
+        <visual name="leg32_visual">
+            <origin xyz="0.08462211501687009 -0.06820991203745454 -0.009999999999999919" rpy="-1.5707963267948983 -1.1119661350741087e-15 -0.6981317007977297" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg32.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg32_collision">
+            <origin xyz="0.08462211501687009 -0.06820991203745454 -0.009999999999999919" rpy="-1.5707963267948983 -1.1119661350741087e-15 -0.6981317007977297" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg32.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg12">
+        <inertial>
+            <origin xyz="-0.05233087928939573 0.0004962225604029413 0.004999999999999912" rpy="0.0 -0.0 0.0" />
+            <mass value="0.29729112047244616" />
+            <inertia ixx="6.096e-5" iyy="2.625e-4" izz="3.185e-4" ixy="-1.911e-6" iyz="-1.31e-18" ixz="-1.634e-17" />
+        </inertial>
+        <visual name="leg12_visual">
+            <origin xyz="0.08462211501686985 -0.06820991203745486 2.6645352591003756e-16" rpy="-1.570796326794895 -1.8888163384851923e-15 -0.6981317007977323" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg12.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg12_collision">
+            <origin xyz="0.08462211501686985 -0.06820991203745486 2.6645352591003756e-16" rpy="-1.570796326794895 -1.8888163384851923e-15 -0.6981317007977323" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg12.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg23">
+        <inertial>
+            <origin xyz="0.06750000159796224 -0.005000000000000154 4.752922819761807e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.992e-5" iyy="5.546e-4" izz="6.278e-4" ixy="6.75e-17" iyz="-2.718e-17" ixz="-6.395e-18" />
+        </inertial>
+        <visual name="leg23_visual">
+            <origin xyz="0.2000000015979664 2.1094237467877976e-16 0.0500000047529247" rpy="3.1415926535897927 1.570796326794892 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg23.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg23_collision">
+            <origin xyz="0.2000000015979664 2.1094237467877976e-16 0.0500000047529247" rpy="3.1415926535897927 1.570796326794892 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg23.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg43">
+        <inertial>
+            <origin xyz="0.06750000159796035 0.004999999999999805 4.752922280193417e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.992e-5" iyy="5.546e-4" izz="6.278e-4" ixy="3.531e-18" iyz="2.629e-17" ixz="-6.395e-18" />
+        </inertial>
+        <visual name="leg43_visual">
+            <origin xyz="0.2000000015979605 0.00999999999999961 0.05000000475292211" rpy="-3.141592653589793 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg43.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg43_collision">
+            <origin xyz="0.2000000015979605 0.00999999999999961 0.05000000475292211" rpy="-3.141592653589793 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg43.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg13">
+        <inertial>
+            <origin xyz="0.06750000159796014 0.005000000000000107 4.752921853867775e-09" rpy="0.0 -5.198782929104088e-62 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.992e-5" iyy="5.546e-4" izz="6.278e-4" ixy="1.088e-17" iyz="-2.665e-19" ixz="-1.990e-17" />
+        </inertial>
+        <visual name="leg13_visual">
+            <origin xyz="0.2000000015979601 0.010000000000000533 0.05000000475292228" rpy="3.1415926535897896 1.5707963267948952 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg13.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg13_collision">
+            <origin xyz="0.2000000015979601 0.010000000000000533 0.05000000475292228" rpy="3.1415926535897896 1.5707963267948952 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg13.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="leg33">
+        <inertial>
+            <origin xyz="0.06750000159796174 -0.005000000000001035 4.7529239921573205e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4044443369036279" />
+            <inertia ixx="7.992e-5" iyy="5.546e-4" izz="6.278e-4" ixy="3.151e-16" iyz="2.522e-17" ixz="1.126e-16" />
+        </inertial>
+        <visual name="leg33_visual">
+            <origin xyz="0.200000001597964 -2.968736367847669e-15 0.050000004752928436" rpy="-3.14159265358978 1.5707963267948928 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg33.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="leg33_collision">
+            <origin xyz="0.200000001597964 -2.968736367847669e-15 0.050000004752928436" rpy="-3.14159265358978 1.5707963267948928 0" />
+            <geometry>
+                <mesh filename="package://quad/meshes/leg33.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="world"/>
+
+    <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="body-v1"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+    </joint>
+    <joint name="CCUP1" type="continuous">
+        <origin xyz="-0.15 0.0 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg11" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="CCUP4" type="continuous">
+        <origin xyz="0.15 0.0 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg41" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="CCUP3" type="continuous">
+        <origin xyz="0.15 0.12 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg31" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="CCUP2" type="continuous">
+        <origin xyz="-0.15 0.12 -0.045" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="body-v1" />
+        <child link="leg21" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="FOOT4" type="continuous">
+        <origin xyz="-0.10466176 0.0009924500000000002 0.01" rpy="1.5707963267948966 -5.5511151231256687e-17 -9.177442125468086e-47" />
+        <parent link="leg42" />
+        <child link="leg43" />
+        <axis xyz="-5.5511151231256687e-17 -1.0 -9.860761315262648e-32" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="FOOT1" type="continuous">
+        <origin xyz="-0.10466176 0.0009924500000000002 0.01" rpy="1.5707963267948966 2.6360961202140277e-31 -4.0053834567517915e-31" />
+        <parent link="leg12" />
+        <child link="leg13" />
+        <axis xyz="2.6360961202140277e-31 -1.0 -2.465190328815662e-32" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="FOOT2" type="continuous">
+        <origin xyz="-0.10466176 0.000992449999999998 -0.01" rpy="1.5707963267948966 -5.551115123125775e-17 6.1083315263577644e-33" />
+        <parent link="leg22" />
+        <child link="leg23" />
+        <axis xyz="-5.551115123125775e-17 -1.0 0.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="FOOT3" type="continuous">
+        <origin xyz="-0.10466176 0.000992449999999998 -0.01" rpy="1.5707963267948966 5.551115123125741e-17 6.099877534946196e-33" />
+        <parent link="leg32" />
+        <child link="leg33" />
+        <axis xyz="5.551115123125741e-17 -1.0 4.930380657631324e-32" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="THIGH1" type="continuous">
+        <origin xyz="-0.05 -0.005 -0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg11" />
+        <child link="leg12" />
+        <axis xyz="0.0 0.0 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="THIGH4" type="continuous">
+        <origin xyz="-0.05 -0.005 0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg41" />
+        <child link="leg42" />
+        <axis xyz="0.0 -1.232595164407831e-32 1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="THIGH2" type="continuous">
+        <origin xyz="0.05 -0.005 -0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg21" />
+        <child link="leg22" />
+        <axis xyz="0.0 0.0 -1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+    <joint name="THIGH3" type="continuous">
+        <origin xyz="0.05 -0.005 0.05" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="leg31" />
+        <child link="leg32" />
+        <axis xyz="0.0 0.0 -1.0" />
+    <dynamics damping="0.2" friction="0.0"/>
+              <limit lower="-3.14" upper="3.14" effort="0.05" velocity="5"/>
+    </joint>
+
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <!-- Leg 1 -->
+  <joint name="CCUP1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT1">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 2 -->
+  <joint name="CCUP2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT2">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 3 -->
+  <joint name="CCUP3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT3">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+  <!-- Leg 4 -->
+  <joint name="CCUP4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="THIGH4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+  <joint name="FOOT4">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+  </joint>
+
+</ros2_control>
+<gazebo>
+  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+   <parameters>/home/aanimesh/Quadruped/install/quad/share/quad/config/controllers.yaml</parameters>
+   </plugin>
+</gazebo>
+</robot>
