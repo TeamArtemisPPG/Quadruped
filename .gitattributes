@@ -2,3 +2,5 @@
 *.stl binary
 *.dae binary
 *.zip binary
+*.step -text
+*.out -text
